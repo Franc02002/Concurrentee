@@ -1,0 +1,94 @@
+
+   public class Auto {
+
+    private String color, marca, modelo, tipoCaja;
+    private int anioFabricacion, kmReco;
+    private double capaTanque, combuActual;
+
+    //Constructores
+    
+    Auto() {
+        color = " ";
+        marca = " ";
+        modelo = " ";
+        tipoCaja = " ";
+        anioFabricacion = 0;
+        kmReco = 0;
+        capaTanque = 0;
+        combuActual = 0;
+    }
+
+    Auto(String c, String mar, String mod, String tC, int aF, int kmR, double cT, double cA) {
+        this.color = c;
+        this.marca = mar;
+        this.modelo = mod;
+        this.tipoCaja = tC;
+        this.anioFabricacion = aF;
+        this.kmReco = kmR;
+        this.capaTanque = cT;
+        this.combuActual = cA;
+    }
+    //Observadores
+    
+    public String getColor(){
+        return this.color;
+    }
+     public String getMarca(){
+        return this.marca;
+    }
+     public String getModelo(){
+        return this.modelo;
+    }
+     public String getTipoCaja(){
+        return this.tipoCaja;
+    }
+     public int getAnioFabri(){
+        return this.anioFabricacion;
+    }
+     public int getkmReco(){
+        return this.kmReco;
+    }
+      public double getCapTanq(){
+        return this.capaTanque;
+    }
+       public double getCombAct(){
+        return this.combuActual;
+    }
+    //Modificadores   
+    
+     public void setColor(String col){
+        this.color = col;
+    }
+
+     public void setMarca(String marca){
+        this.marca = marca;
+    }
+     
+     public void setModelo(String mode){
+        this.modelo = mode;
+    }
+     public void setTipoCaja(String tipCaja){
+        this.tipoCaja = tipCaja;
+    }
+
+     public void setAnioFabri(int anioF){
+        this.anioFabricacion = anioF;
+    }
+     
+     public void setkmReco(int kmR){
+        this.kmReco = kmR;
+    }
+     public void setCapTanq(double capTq){
+        this.capaTanque = capTq;
+    }
+     public void setCombAct(double cmbAct){
+        this.combuActual = cmbAct;
+    }
+
+
+     //Propias del tipo
+     
+     
+
+
+}

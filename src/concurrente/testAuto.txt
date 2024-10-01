@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+public class testAuto {
+    
+    
+    public static void cargaAutos(Auto arrAutos[]){
+        Scanner sc = new Scanner(System.in);
+        int i;
+        String color, marca, modelo, tipoCaja;
+        int anioFabricacion, kmReco;
+        double capaTanque, combuActual;
+        for(i=0; i<(arrAutos.length);i++){
+            System.out.println("Por favor ingrese la marca del vehiculo ");
+            marca = sc.next();
+            System.out.println("Por favor ingrese el color del vehiculo ");
+            color = sc.next();
+            System.out.println("Por favor ingrese el modelo del vehiculo ");
+            modelo = sc.next();
+            System.out.println("Por favor ingrese si es caja es tipo Manual o Automatica");
+            tipoCaja = sc.next();
+            System.out.println("Ingrese el anio de fabricacion del vehiculo ");
+            anioFabricacion = sc.nextInt();
+            System.out.println("Ingrese los kilometros que tiene el vehiculo ");
+            kmReco = sc.nextInt();
+            System.out.println("Ingrese la capacidad del tanque. Este esta expresado en Litros");
+            capaTanque = sc.nextDouble();
+            System.out.println("Ingrese el combustible actual del vehiculo, este esta expresando el  Litros");
+            combuActual = sc.nextDouble();
+            arrAutos[i] = new Auto(color, marca, modelo, tipoCaja, anioFabricacion, kmReco, capaTanque, combuActual);
+        }
+     }
+    public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    Auto arrAutos[];
+    arrAutos = new Auto[5];
+    cargaAutos(arrAutos);
+    
+    
+    
+}
